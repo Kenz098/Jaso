@@ -4,8 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f8b29c98d6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>wla pay sulod akong Personal blog sir  😞</h1>
+    <div id="header">
+        <div class="container1">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#portfolio">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p>Website/developer</p>
+                <h1>Hi, I'm <span id="typing-animation"></span><br>From Gingoog City</h1>
+             </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! Im Ian kenneth Jaso, a website developer with a passion for creating a blog content. I thrive on creativity,
+                         problem-solving, and continuous learning. With 4 years of experience in I.T, i'ved honed my skills in website developer
+                         Outside of work, you'll often find me playing online games like COC, ML, and Online Gambling. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programmer</span><br> Java Netbeans / BSIT-III</li>
+                                <li><span>E-commerse</span><br> Designing Web / Application</li>
+                                <li><span>Free Lancer</span><br> @Upwork / Survey apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Programmer NCIII</span><br> Software / Hardware</li>
+                                <li><span>Electical-NCII</span><br> OJT in Moresco-II / installing cables and wires</li>
+                                <li><span>UI?UX</span><br> Designing Web / Application</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014-2016</span><br> Manuel Lugod Central School</li>
+                                <li><span>2016-2021</span><br> Gingoog City Comprehensive National High School</li>
+                                <li><span>2021-2025</span><br> Gingoog City Colleges Inc.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container1">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="youtube-video" class="my-life-container">
+        <div class="container1">
+            <h1 class="sub-title my-life-title">My Life</h1>
+            <iframe class="video-frame" width="100%" height="500" src="https://www.youtube.com/embed/grxt14ZEJLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
+
+
+    <div id="contact">
+        <div class="container1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Jasoian620@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>099974266807</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Ian Kenneth Jaso <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+       window.onload = function() {
+            const text = "Kenzar";
+            const delay = 1000; // Delay between each letter in milliseconds
+
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    document.getElementById('typing-animation').textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, delay);
+                } else {
+                    setTimeout(reset, delay); // Reset after typing "Kenzar"
+                }
+            }
+
+            function reset() {
+                document.getElementById('typing-animation').textContent = '';
+                index = 0;
+                setTimeout(type, delay); // Start typing animation again
+            }
+
+            type(); // Start typing animation
+        };
+    </script>
 </body>
 </html>
