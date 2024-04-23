@@ -1,305 +1,132 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f8b29c98d6.js" crossorigin="anonymous"></script>
+</head>
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="styles.css">
-
-        <title>Coffee Website By Jaso</title>
-    </head>
-    <body>
-        <!--==================== LOADER ====================-->
-        
-
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="img/logo.png" alt="" class="nav__logo-img">
-                    coffee.
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#premium" class="nav__link">Premium</a>
-                        </li>
-                        <li class="nav__item nav__dropdown">
-                            <a href="#blog" class="nav__link">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="main.html">Personal Blog</a></li>
-                                <!-- Add more dropdown items as needed -->
+<body>
+    <div id="header">
+        <div class="container1">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#portfolio">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p>Website/developer</p>
+                <h1>Hi, I'm <span id="typing-animation"></span><br>From Gingoog City</h1>
+             </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! Im Ian kenneth Jaso, a website developer with a passion for creating a blog content. I thrive on creativity,
+                         problem-solving, and continuous learning. With 4 years of experience in I.T, i'ved honed my skills in website developer
+                         Outside of work, you'll often find me playing online games like COC, ML, and Online Gambling. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programmer</span><br> Java Netbeans / BSIT-III</li>
+                                <li><span>E-commerse</span><br> Designing Web / Application</li>
+                                <li><span>Free Lancer</span><br> @Upwork / Survey apps</li>
                             </ul>
-                        </li>
-                    </ul>
-                    <div class="nav__close" id="nav-close">
-                        <i class="bx bx-x"></i>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Programmer NCIII</span><br> Software / Hardware</li>
+                                <li><span>Electical-NCII</span><br> OJT in Moresco-II / installing cables and wires</li>
+                                <li><span>UI?UX</span><br> Designing Web / Application</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014-2016</span><br> Manuel Lugod Central School</li>
+                                <li><span>2016-2021</span><br> Gingoog City Comprehensive National High School</li>
+                                <li><span>2021-2025</span><br> Gingoog City Colleges Inc.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container1">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-11.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-grid-alt"></i>
-                </div>
-            </nav>
-        </header>
-        
-
-        <!--==================== MAIN ====================-->
-        <main>
-            <!--==================== HOME ====================-->
-            <section class="home grid" id="home">
-                <div class="home__container">
-                    <div class="home__content container">
-                        <h1 class="home__title">
-                            Choose Your Favorite Coffee And Enjoy<span>.</span>
-                        </h1>
-                        <p class="home__description">
-                            Buy the best and delicious coffees.
-                        </p>
-                        <div class="home__data">
-                            <div class="home__data-group">
-                                <h2 class="home__data-number">120K</h2>
-                                <h3 class="home__data-title">Testimonials</h3>
-                                <p class="home__data-description">
-                                    Testimonials from various customers who trust us.
-                                </p>
-                            </div>
-                            <div class="home__data-group">
-                                <h2 class="home__data-number">340+</h2>
-                                <h3 class="home__data-title">Exclusive Product</h3>
-                                <p class="home__data-description">
-                                    Premium preparation with quality ingredients.
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#specialty"></a>
-                        <img src="img/scroll.png" alt="" class="home__scroll">
+                <div class="work">
+                    <img src="images/work-11.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <img src="img/home.png" alt="" class="home__img">
-            </section>
-
-            <!--==================== ESPECIALTY ====================-->
-            <div class="specialty section container" id="specialty">
-                <div class="specialty__container">
-                    <div class="specialty__box">
-                        <h2><div class="section__title">
-                            Specialty coffees that make you happy and cheer you up!
-                        </h2>
-                        <div>
-                            <a href="" class="button specialty__button">
-                                See More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="specialty__category">
-                        <div class="specialty__group specialty__line">
-                            <img src="img/specialty1.png" alt="" class="specialty__img">
-                            <h3 class="specialty__title">Selected Coffee</h3>
-                            <p class="specialty__description">
-                                We select the best premium coffee, for a true taste.
-                            </p>
-                        </div>
-                    
-                    
-                        <div class="specialty__group specialty__line">
-                            <img src="img/specialty1.png" alt="" class="specialty__img">
-                            <h3 class="specialty__title">Delicious Cookies</h3>
-                            <p class="specialty__description">
-                                Enjoy your coffee with some hot cookies
-                            </p>
-                        </div>
-                    
-                    
-                        <div class="specialty__group">
-                            <img src="img/specialty1.png" alt="" class="specialty__img">
-                            <h3 class="specialty__title">Enjoy at Home</h3>
-                            <p class="specialty__description">
-                                Enjoy the best coffee in the comfort of your home.
-                            </p>
-                        </div>
+                <div class="work">
+                    <img src="images/work-11.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium, fugit, atque ipsam consequuntur inventore odio, in sed iste voluptas doloremque eum libero autem impedit porro error ex nemo? Facere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!--==================== PRODUCTS ====================-->
-            <section class="products section" id="products">
-                <div class="products__container container">
-                    <h2 class="section__title">
-                        Choose our delicious and best products
-                    </h2>
-                    <ul class="products__filters">
-                        <li class="products__item products__line active-product" data-filter=".delicacies">
-                            <h3 class="products__title">New Delicacies</h3>
-                            <span class="products__stock">3 products</span>
-                        </li>
-                        <li class="products__item products__line" data-filter=".coffee">
-                            <h3 class="products__title">Hot Coffee</h3>
-                            <span class="products__stock">4 products</span>
-                        </li>
-                        <li class="products__item" data-filter=".cake">
-                            <h3 class="products__title">Cakes And Delicacies</h3>
-                            <span class="products__stock">4 products</span>
-                        </li>
-                    </ul>
-                    <div class="products__content grid">
-                        <!--========== Delicacies ==========-->
-                        <article class="products__card delicacies">
-                            <div class="products__shape">
-                                <img src="img/delicacies1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱5</h2>
-                                <h3 class="products__name">Cookies</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
 
-                        <article class="products__card delicacies">
-                            <div class="products__shape">
-                                <img src="img/delicacies1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱50</h2>
-                                <h3 class="products__name">Croissant</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
+    <div id="youtube-video" class="my-life-container">
+        <div class="container1">
+            <h1 class="sub-title my-life-title">My Life</h1>
+            <iframe class="video-frame" width="100%" height="500" src="https://www.youtube.com/embed/grxt14ZEJLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
 
-                        <article class="products__card delicacies">
-                            <div class="products__shape">
-                                <img src="img/delicacies1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱100</h2>
-                                <h3 class="products__name">Croissant</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-                        <!--========== Coffee ==========-->
-                        <article class="products__card coffee">
-                            <div class="products__shape">
-                                <img src="img/coffee1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱20</h2>
-                                <h3 class="products__name">Black Coffee</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
 
-                        <article class="products__card coffee">
-                            <div class="products__shape">
-                                <img src="img/coffee1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱50</h2>
-                                <h3 class="products__name">Pure Coffee</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-
-                        <article class="products__card coffee">
-                            <div class="products__shape">
-                                <img src="img/coffee1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱100</h2>
-                                <h3 class="products__name">Milk Coffee</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-
-                        <article class="products__card coffee">
-                            <div class="products__shape">
-                                <img src="img/coffee1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱50</h2>
-                                <h3 class="products__name">Moka Coffee</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-                        <!--========== Cake ==========-->
-                        <article class="products__card cake">
-                            <div class="products__shape">
-                                <img src="img/cake1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱150</h2>
-                                <h3 class="products__name">Cream Cake</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-
-                        <article class="products__card cake">
-                            <div class="products__shape">
-                                <img src="img/cake1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱150</h2>
-                                <h3 class="products__name">Chocolate Croissant</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-
-                        <article class="products__card cake">
-                            <div class="products__shape">
-                                <img src="img/cake1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱50</h2>
-                                <h3 class="products__name">Pancake</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
-
-                        <article class="products__card cake">
-                            <div class="products__shape">
-                                <img src="img/cake1.png" alt="" class="products__img">
-                            </div>
-                            <div class="products__data">
-                                <h2 class="products__price">₱50</h2>
-                                <h3 class="products__name">Milk Cake</h3>
-                                <button class="button products__button">
-                                    <i class="bx bx-shopping-bag"></i>
-                                </button>
-                            </div>
-                        </article>
+    <div id="contact">
+        <div class="container1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Jasoian620@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>099974266807</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
+<<<<<<< HEAD
             </section>
 
             <!--==================== QUALITY ====================-->
@@ -588,20 +415,77 @@
                     <span class="footer__copy">
                         &#169; Jaso. All rigths reserved
                     </span>
+=======
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+>>>>>>> 6686db6f260ed028f6353e517c306295c917a8f7
                 </div>
             </div>
-        </footer>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Ian Kenneth Jaso <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
 
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="bx bx-up-arrow-alt"></i>
-        </a>
 
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src="js/mixitup.min.js"></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="js/main.js"></script>
-    </body>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+       window.onload = function() {
+            const text = "Kenzar";
+            const delay = 1000; // Delay between each letter in milliseconds
+
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    document.getElementById('typing-animation').textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, delay);
+                } else {
+                    setTimeout(reset, delay); // Reset after typing "Kenzar"
+                }
+            }
+
+            function reset() {
+                document.getElementById('typing-animation').textContent = '';
+                index = 0;
+                setTimeout(type, delay); // Start typing animation again
+            }
+
+            type(); // Start typing animation
+        };
+    </script>
+</body>
 </html>

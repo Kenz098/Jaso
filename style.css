@@ -226,6 +226,7 @@ nav ul li a:hover::after {
     margin-bottom: 50px; /* Adjust margin bottom for the title */
 }
 
+<<<<<<< HEAD
 .main {
     background: var(--background-secondary);
     padding: var(--py) 0;
@@ -330,6 +331,9 @@ nav ul li a:hover::after {
   \*-----------------------------------*/
   
   .aside { display: none; }
+=======
+
+>>>>>>> 6686db6f260ed028f6353e517c306295c917a8f7
 .contact-left{
     flex-basis: 35%;
 }
