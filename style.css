@@ -79,6 +79,29 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
+
+nav ul .dropdown {
+    position: absolute;
+    background-color: transparent; /* Set background color to transparent */
+    display: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    left: 70%;
+}
+
+nav ul .dropdown li {
+    display: block;
+}
+
+nav ul .dropdown li a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
 /*----------about--------*/
 #about{
     padding: 80px 0;
