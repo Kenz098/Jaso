@@ -38,45 +38,39 @@
   -->
 
   <header class="header">
-
     <div class="header-bottom skewBg" data-header>
       <div class="container">
-
         <a href="#" class="logo">Clash of Clans</a>
-
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
-
             <li class="navbar-item">
               <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
             </li>
-
             <li class="navbar-item">
               <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
             </li>
-
             <li class="navbar-item">
               <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+              <!-- Dropdown -->
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="index.html" class="navbar-link skewBg">Personal Blog</a></li>
+              </ul>
             </li>
-
             <li class="navbar-item">
               <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
             </li>
-
           </ul>
         </nav>
-
         <div class="header-actions">
           <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
             <ion-icon name="menu-outline" class="menu"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
           </button>
         </div>
-
       </div>
     </div>
-
   </header>
+  
 
   <main>
     <article>
@@ -251,7 +245,7 @@
 
           </div>
         </section>
-        
+
         <div style="text-align: center;">
           <iframe id="youtube-video" class="video-frame" width="80%" height="500" src="https://www.youtube.com/embed/p-whzUgP1Ew?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
@@ -849,6 +843,23 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const navbarItems = document.querySelectorAll(".navbar-item");
+      
+        navbarItems.forEach(navbarItem => {
+          const dropdownMenu = navbarItem.querySelector(".dropdown-menu");
+          if (dropdownMenu) {
+            navbarItem.addEventListener("mouseenter", function() {
+              dropdownMenu.classList.add("active");
+            });
+      
+            navbarItem.addEventListener("mouseleave", function() {
+              dropdownMenu.classList.remove("active");
+            });
+          }
+        });
+      });
+  </script>
 </body>
 </html>

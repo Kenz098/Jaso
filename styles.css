@@ -421,8 +421,43 @@ body {
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus) { background-color: var(--white_10); }
+.navbar-link:hover,
+.navbar-link:focus { background-color: var(--white_10); }
 
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: (100% + 10%);
+  left: 73%;
+  background-color: transparent;
+  border-radius: 0 0 4px 4px;
+  padding: 10px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s;
+  z-index: 10;
+}
+
+.dropdown-menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-item {
+  list-style: none;
+  text-align: center;
+}
+
+.dropdown-item a {
+  display: block;
+  padding: 10px;
+  color: var(--white);
+  transition: background-color var(--transition);
+}
+
+.dropdown-item a:hover {
+  background-color: var(--white_10);
+}
 
 /*-----------------------------------*\
   #HERO
